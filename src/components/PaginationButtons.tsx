@@ -12,7 +12,7 @@ const PaginationButtons = () => {
 
   return (
     <div className="text-blue-700 flex px-10 pb-4 sm:justify-start sm:space-x-44 sm:px-0">
-      {startIndex >= 10 && (
+      {startIndex >= 2 && (
         <Link
           href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex - 1}`}
         >
