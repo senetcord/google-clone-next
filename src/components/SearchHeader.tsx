@@ -19,6 +19,7 @@ const SearchHeader = () => {
             height={40}
             priority
             style={{ width: "auto" }}
+            className="sm:block hidden"
           />
         </Link>
         <div className="flex-1">
