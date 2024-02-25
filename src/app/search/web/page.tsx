@@ -6,11 +6,11 @@ interface searchParamsProps {
   start: string;
 }
 
-const WebSearchPage = async ({
+async function WebSearchPage({
   searchParams,
 }: {
   searchParams: searchParamsProps;
-}) => {
+}) {
   const startIndex = searchParams.start || "1";
 
   const response = await fetch(
@@ -37,5 +37,5 @@ const WebSearchPage = async ({
   }
 
   return <div>{results && <WebSearchResults results={data} />}</div>;
-};
+}
 export default WebSearchPage;
